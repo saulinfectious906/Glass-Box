@@ -1,0 +1,8 @@
+Step,Mode,Phi,Vector_Sim,Gate_Status,Action,,,,
+0,CODE,0.0292,0.8792,Syntax Error,INTERVENTION,,,,
+0,CODE,0.0106,0.8606,Syntax Error,INTERVENTION,,,,
+1,CODE,1.0692,0.9202,Clean,STABLE,,,,
+2,CODE,0.9781,0.8301,Clean,STABLE,,,,
+3,CHAT,1.1169,0.9699,Clean,STABLE,,,,0.7417
+4,CODE,0.8888,0.7428,Clean,STABLE,,,,
+5,CODE,1.0991,0.9541,Clean,STABLE,,,,
